@@ -12,23 +12,25 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
     <header>
         <img src="./assets/allura_logo.png">
     </header>
     <main>
         <section class="input">
-            <input type="text">
-            <div class="row">
-                <img src="./assets/notify_icon.png" class="input__notify-icon">
+            <div class="input__input-container">
+                <textarea placeholder="Ingrese el texto aquí." class="input__input" cols="40" wrap="hard"></textarea>
             </div>
-            <div class="row">
+            <div class="input__alert row">
+                <img src="./assets/notify_icon.png" class="input__notify-icon">
+                <p class="input__notify-text">Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="row input__button-container">
                 <button class="input__button input__button--dark">
                     Encriptar
                 </button>
@@ -39,11 +41,11 @@
         </section>
         <section class="output">
             <img src="./assets/illustration.png" class="output__image">
-            <h4 class="output__header">
+            <h2 class="output__header">
                 <bold>
                     Ningún mensaje fue encontrado
                 </bold>
-            </h4>
+            </h2>
             <p output="output__subheader">
                 Ingresa el texto que desees encriptar o desencriptar.
             </p>
@@ -51,7 +53,7 @@
     </main>
     <footer class="footer">
         <p class="footer__text">
-            Sprint 01 by Luis Gustavo for Oracle One.
+            Sprint 01 by <a href="https://www.linkedin.com/in/wichogzf/">Luis Gustavo</a> for Oracle One.
         </p>
     </footer>
 

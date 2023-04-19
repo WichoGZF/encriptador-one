@@ -1,17 +1,165 @@
-.dark-blue{ 
-    background-color: #0A3871; 
+html{
+    width: 100%; 
+    height: 100%;
 }
 
-.dark-blue_text{ 
-    background-color: #0A3871;
+body{ 
+    --dark-blue: #0A3871; 
+    --light-blue: #D8DFE8;
+    --gray: #343A40; 
+    
+    padding: 2rem;
+
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0px;
 }
 
-.gray{ 
-    background-color: #343A40;
+p, h1, h2, h3, h4, h5{ 
+    color: var(--dark-blue);
+    margin: 0px;
 }
 
-.gray-text{
-    color: #343A40;
+header{ 
+    flex: 0 0 10%;
 }
 
+main{ 
+    flex: 1 1 auto;
+    display: flex; 
+    gap: 4rem;
+}
 
+footer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.input{ 
+    flex: 1 1 auto; 
+    display: flex; 
+    flex-direction: column;
+    padding-left: 10rem;
+}
+
+.input__input-container{
+    flex: 1 1 70%; 
+}
+
+.input__input{ 
+    all: unset;
+    color: var(--dark-blue); 
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    word-break: break-all;
+    word-wrap: normal;
+}
+
+.input__input::placeholder{ 
+    color: gray; 
+    font-size: 2rem;
+    flex-basis: auto;
+    text-align: start;
+}
+
+.input__notify-icon{ 
+    width: 20px; 
+    height: 20px;
+}
+
+.input__notify-text{ 
+    font-size: .8rem;
+    text-align: center;
+    color: var(--gray);
+}
+
+.input__alert{
+    padding: .5rem;
+}
+
+.input__button{ 
+    all: unset;
+    height: 70px;
+    flex: 1 1 50%;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+.input__button--dark{
+    background-color: var(--dark-blue);
+    color: white; 
+    border-color: var(--dark-blue);
+}
+
+.input__button--light{
+    background-color: var(--light-blue);
+    color: var(--dark-blue); 
+    border-color: var(--dark-blue);
+}
+
+.output{ 
+    flex: 1 1 30%; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.output>p, .output>h2{ 
+    text-align: center;
+}
+
+.row{
+    flex-basis: auto;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer__text{
+    color: gray;
+    font-size: .80rem;
+}
+
+@media (max-width: 768px) {
+    /* … */
+    main{
+        flex-direction: column;
+    }
+
+    .input{
+        padding-left: 0px;
+    }
+
+    .output{
+        flex-basis: content;
+        flex-grow: 0;
+    }
+
+    .output__image{
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    /* … */
+    body{
+        padding: .5rem;
+    }
+
+    .input__button-container{
+        flex-direction: column;
+    }
+
+    .input__button{
+       width: 100%;
+       flex-basis: 70px;
+    }
+}
