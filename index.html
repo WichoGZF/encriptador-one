@@ -23,15 +23,36 @@
         <img src="./assets/allura_logo.png">
     </header>
     <main>
-        <section>
-
+        <section class="input">
+            <input type="text">
+            <div class="row">
+                <img src="./assets/notify_icon.png" class="input__notify-icon">
+            </div>
+            <div class="row">
+                <button class="input__button input__button--dark">
+                    Encriptar
+                </button>
+                <button class="input__button input__button--light">
+                    Desencriptar
+                </button>
+            </div>
         </section>
-        <section>
-
+        <section class="output">
+            <img src="./assets/illustration.png" class="output__image">
+            <h4 class="output__header">
+                <bold>
+                    Ningún mensaje fue encontrado
+                </bold>
+            </h4>
+            <p output="output__subheader">
+                Ingresa el texto que desees encriptar o desencriptar.
+            </p>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <p class="footer__text">
+            Sprint 01 by Luis Gustavo for Oracle One.
+        </p>
     </footer>
 
     <script src="script.js" async defer></script>
