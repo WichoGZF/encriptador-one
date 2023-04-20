@@ -116,6 +116,24 @@ footer{
     text-align: center;
 }
 
+.output__button{
+    all: unset;
+    height: 70px;
+    width: 90%;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    background-color: var(--light-blue);
+    color: var(--dark-blue); 
+    border-color: var(--dark-blue);
+}
+
+.output__text{
+    font-size: 1rem; 
+    color: var(--gray);
+}
+
 .row{
     flex-basis: auto;
     display: flex;

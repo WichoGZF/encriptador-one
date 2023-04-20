@@ -24,22 +24,22 @@
     <main>
         <section class="input">
             <div class="input__input-container">
-                <textarea placeholder="Ingrese el texto aquí." class="input__input" cols="40" wrap="hard"></textarea>
+                <textarea placeholder="Ingrese el texto aquí." class="input__input" id="textfield" cols="40" wrap="hard"></textarea>
             </div>
             <div class="input__alert row">
                 <img src="./assets/notify_icon.png" class="input__notify-icon">
                 <p class="input__notify-text">Solo letras minúsculas y sin acentos.</p>
             </div>
             <div class="row input__button-container">
-                <button class="input__button input__button--dark">
+                <button class="input__button input__button--dark" id="encrypt-button">
                     Encriptar
                 </button>
-                <button class="input__button input__button--light">
+                <button class="input__button input__button--light" id="decrypt-button">
                     Desencriptar
                 </button>
             </div>
         </section>
-        <section class="output">
+        <section class="output" id="output">
             <img src="./assets/illustration.png" class="output__image">
             <h2 class="output__header">
                 <bold>
